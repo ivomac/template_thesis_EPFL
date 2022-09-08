@@ -1,0 +1,55 @@
+
+\def\title{Trials and Tribulations}
+\def\author{Me}
+
+\def\jury{%
+	\begin{tabular}{lr}
+		The \textsc{Pres}& président du jury \\
+		My \textsc{Advisor}& directeur de thèse \\
+		My future \textsc{Advisor}& rapporteur interne \\
+		The guy that complains about missing \textsc{commas}& rapporteur externe \\
+		The guy in \textsc{Zoom}& rapporteur externe \\
+	\end{tabular}
+}
+
+\newgeometry{
+	left=3cm,
+	right=3cm,
+	top=1cm,
+	bottom=2cm,
+	includefoot,
+	includehead,
+}
+
+\begin{titlepage}
+	\vbox{\centering
+		\begin{minipage}{0.42\textwidth}
+			\begin{flushleft}
+				\includegraphics[width=3.2cm]{Headers/Figures/Logo_EPFL.pdf}
+			\end{flushleft}
+		\end{minipage}
+		\begin{minipage}{0.57\textwidth}
+			\begin{flushright}
+				École polytechnique fédérale de Lausanne \\
+				Programme doctoral en Physique \\
+				Laboratoire de theorie de la matière condensé
+			\end{flushright}
+		\end{minipage}
+	}
+	\vfill
+	\vbox{\centering \Large \textbf{\title}}
+	\vspace{5mm}
+	\vbox{\centering \Large \author}
+	\vfill
+	\vbox{\centering
+		Thèse en vue de l'obtention du grade \\
+		de docteur ès sciences soutenue le 01 april 1984
+	}
+	\vspace{5mm}
+	\vbox{\centering Jury:}
+	\vspace{2mm}
+	\vbox{\centering \jury}
+\end{titlepage}
+
+\restoregeometry
+
