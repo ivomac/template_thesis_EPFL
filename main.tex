@@ -2,18 +2,20 @@
 
 \documentclass[11pt, a4paper]{book}
 
-\input{Headers/header}
+\input{header}
 
 % Styles
 
 \makeatletter
 
-\input{Styles/fonts}
+% \input{Styles/fonts}
 \input{Styles/geometry}
 \input{Styles/table_of_contents}
 \input{Styles/chapter}
 \input{Styles/subsection}
-\input{Styles/header_foot}
+
+% \input{Styles/fancy_header}
+\input{Styles/fancy_foot}
 
 \makeatother
 
@@ -21,13 +23,13 @@
 
 \frontmatter
 
-\input{Headers/title_page}
+\input{Front_matter/title_page}
 
-\input{Headers/quote}
+\input{Front_matter/quote}
 
-\input{Headers/abstract}
+\input{Front_matter/abstract}
 
-\input{Headers/acknowledgements}
+\input{Front_matter/acknowledgements}
 
 \Clear
 \tableofcontents
@@ -47,7 +49,7 @@
 
 \Clear
 \backmatter
-\bibliographystyle{ieeetr}
+\bibliographystyle{plainnat}
 \bibliography{bib}
 
 \end{document}
