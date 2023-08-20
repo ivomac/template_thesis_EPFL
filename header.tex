@@ -12,3 +12,11 @@
 
 \newcommand{\Clear}{\clearpage{\thispagestyle{empty}\cleardoublepage}}
 
+\newcommand{\FigPrefix}{Chapter_\thechapter/Figures}
+\newcommand{\plot}[2][]{%
+	{%
+		\centering
+		\includegraphics[#1]{\FigPrefix/#2}%
+	}%
+}
+
